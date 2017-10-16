@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <cn.tianya.light.view.TabChannelIndicator
+        android:id="@+id/tabIndicator"
+        android:layout_width="@dimen/tab_layout_width"
+        android:layout_height="@dimen/tab_layout_height"
+        app:indicatorHeightEx="2dp" />
+
+    <FrameLayout
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/tab_down_layout"
+            android:layout_width="36dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tab_down"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_down" />
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:id="@+id/diver"
+                android:layout_width="@dimen/horizontal_diver_width"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="-2dp"
+                android:background="@color/color_e0e0e0" />
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+
+
